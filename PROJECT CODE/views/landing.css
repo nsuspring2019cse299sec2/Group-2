@@ -1,3 +1,8 @@
 .jumbotron{
 	text-align: center;
 }
+
+#box{
+	padding-top: 7%;
+	opacity: 0.9;
+}
