@@ -21,3 +21,12 @@ body{
 	width: 100%;
 
 }
+
+#HM{
+	opacity: 1;
+	font-style: unset;
+}
+
+.btn{
+	font-size: 40px;
+}
