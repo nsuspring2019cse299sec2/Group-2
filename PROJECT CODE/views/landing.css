@@ -6,3 +6,18 @@
 	padding-top: 7%;
 	opacity: 0.9;
 }
+
+#box1{
+	padding-top: 7%;
+	opacity: 0.9;
+}
+
+body{
+	background-image: url(https://answers.unrealengine.com/storage/temp/138770-texture-soccer-field-1680x1050-wide-wallpapers.net.jpg);
+	background-size: cover;
+	background-position: center;
+	
+	height: 100%;
+	width: 100%;
+
+}
