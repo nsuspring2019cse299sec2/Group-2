@@ -1,0 +1,96 @@
+Table of Contents for HERMES MIGHT 1. Introduction 
+ 1.1 Purpose  1.2 Document Conventions  1.3 Intended Audience and Reading Suggestions  1.4 Product Scope  1.5 References 
+2. Overall Description 
+ 2.1 Product Perspective  2.2 Product Functions  2.3 User Classes and Characteristics  2.4 Operating Environment  2.5 Design and Implementation Constraints  2.6 User Documentation  2.7 Assumptions and Dependencies 
+3. External Interface Requirements 
+ 3.1 User Interfaces  3.2 Hardware Interfaces  3.3 Software Interfaces  3.4 Communications Interfaces 
+4. System Feature 
+ 4.1 System Feature 1  4.2 System Feature 2 (and so on) 
+5. Other Nonfunctional Requirements 
+ 5.1 Performance Requirements  5.2 Safety Requirements  5.3 Security Requirements  5.4 Software Quality Attributes  5.5 Business Rules 
+ 
+1. Introduction 
+ 
+1.1 Purpose 
+Hermes Might is a web based software solution where a user can rent playgrounds in different area in the city. It allows users to look for playground where they can arrange sports tournaments or can rent for play or they can find other people who want to play, or owner can give shelter in case of natural disasters or other social activities. Hermes Might also allow user to put their field for rent as well as to search for the perfect playground for playing football, cricket or any other sports. Here the users (owner or renter) can give the detail information (like conditions, price etc.) about their space (applicable for the owner) and renter can search and see the fields and then can rent the field which is suitable for them. Anyone can sign up for free but the owners need to go through some verifications. User can edit their information by signing into their accounts. Even the owner and renter can have a chat on this site if they need any additional information. This web site makes renting procedure easy and faster. 
+1.2 Document Conventions 
+Users from non-technical backgrounds are encouraged to skip to System Features (Section 4) to get an idea of key features of Hermes Might. All readers are requested to read the Non-functional Requirements (Section 5) thoroughly. 
+1.3 Intended Audience and Reading Suggestions 
+This documents is intended for anyone in the development, managing and working for “Hermes Might”. The SRS contains product descriptions, interface requirements and other non-functional requirements. Readers are requested to read the SRS in the given sequence. 
+1.4 Product Scope 
+Users looking a playground can search playgrounds by filtering their location, budget. User also can compare fields. They also can pre-book any ground (depending on their availability) They also can select any ground as their favorite so that they will be able to check their ground whenever they want. On the other hand owner can also rent their field. They can share their contact no. or even they can have a chat with their customer. 
+1.5 References 
+https://www.getomnify.com/use-case/soccer-scheduling-software 
+2. Overall Description 
+ 
+2.1 Product Perspective  To help the users find playgrounds available in our country   People can find others so that they can play together.   To know the description and the fees (if required) of the playground   Facilities for donating, in case of natural disasters, blood need and any other problems. (Non profitable)  
+2.2 Product Functions  People can search playgrounds and book them.   Register here to use the website.   Can connect with other people through the account here.   Can create events ( it’s an arrangement system to invite other players in the playground)   Can help/donate.  
+2.3 User Classes and Characteristics 
+ 
+There’ll be these classes. 
+ User class, admin class, moderate class.  Characteristics: 
+ 
+User Class: 
+ 
+ Search playgrounds.   Create events.   Send friend request.   Message others.   Donate or participate in Charity.  Moderate Class: 
+ 
+ Can moderate the playground descriptions.  
+ Create events.   Ban users.  
+ 
+Admin: 
+ 
+ Full access to the website.   Can do crude everything.  
+2.4 Operating Environment 
+This is a web based application, which can be run on any device as long as it has internet connection and the web application server is up. 
+2.5 Design and Implementation Constraints 
+Due to the shortage of time backend coding will only be using node js and will be using non-sql database (mongodb) so we won’t get any benefit of sql database.  
+2.6 User Documentation  User will need to sign up to use the web application.   User will need to login.   User can see available playgrounds.   User can book playgrounds.   User can create events or tournament to the booked playground.   User can search for more users.   User can add other users.   User can chat with other users.   User can donate and take part in a charity.   User can log out.   There’ll be an AI of voice chat to help user get comfortable with the application.  
+2.7 Assumptions and Dependencies 
+List any assumed factors (as opposed to known facts) that could affect the requirements stated in the SRS. These could include third-party or commercial components that you plan to use, issues 
+around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project, unless they are already documented elsewhere (for example, in the vision and scope document or the project plan). 
+3. External Interface 
+ 
+3.1 User Interfaces 
+The main object will be to create a user friendly interface. We’ll be using html, css, bootstrap/ semantic.ui / mdle.js and for the backend we’ll be using node js (framework -> express) The design has not been finalized yet but the basic concept will be  
+ Registration page (where the user can register)   Login page (where the user can login, if the login is successful the user will be directed to the loading page else an error will pop up in the login page.)    Landing page (Some playground will be show and online users will be shown active, there’ll be a search bar to find playgrounds which will redirected to the search user page, there will be a navigation bar with basic operations and a logout button which will redirect the user to the login page.)   Search Playground Page (where the searched playground will be displayed, if not the closest thing will be displayed.)   Search User page (here people can search any other users. Where searched user will be displayed, if exist.)  
+3.2 Hardware Interfaces 
+This will temporarily be hosted in a local-host server but originally all we need is a server to store the application and a device connected with the internet to access. 
+3.3 Software Interfaces 
+This has not been implemented yet but we will be using.  
+ Database -> mongoose(mongodb)   DS -> any.   Tools -> HTML, CSS, bootstrap, nodejs, express, Jquery.  
+3.4 Communications Interfaces 
+The entire communication will take place inside the website via chat, all the messages will be encrypted (using has). Most of the data in the database of our website will be in encrypted. 
+4. System Feature 
+ 
+4.1 System Feature 1  Registration page, where the user can register. (high priority) 4.1.2   Fill in the credentials.   Press the sign up buttons.   User will be signed up. 4.1.3   If any required credential is empty or wrong, then there will be error message.  
+4.2 System Feature 2 (and so on) 
+4.2.1 Login page (where the user can login, if the login is successful the user will be directed to the loading page else an error will pop up in the login page.) (High priority) 
+ 
+4.2.2  
+ Fill in the credentials   Press the Log in buttons.   User will be logged in.  
+ 
+4.3 Landing page (Some playground will be show and online users will be shown active, there’ll be a search bar to find playgrounds which will redirected to the search user page, there will be a navigation bar with basic operations and a logout button which will redirect the user to the login page.) (High priority)  
+ 
+4.3.1   Search bar credential filled and clicked.   Redirected to the search playground page.  
+ 
+4.4 Search Playground Page (where the searched playground will be displayed, if not the closest thing will be displayed.) (Low priority)  
+ 
+4.5 Search User page (here people can search any other users. Where searched user will be displayed, if exist.) (Medium priority).   Add user.   Delete user.  
+ 
+4.6 AI (Medium priority).   AI will be used in the chat box where user’s voice can be recognized.  
+5. Other Nonfunctional Requirements 
+ 
+5.1 Performance Requirements 
+Since this is a web application, the performance of the application will be on point, unless there is an internet issue or a server maintenance problem. 
+5.2 Safety Requirements 
+The necessary data will be stored in another database or file in case of emergency. If there is a loss/damage/harm to the web application, the important data can be found in the secondary database. 
+5.3 Security Requirements 
+The web application will be made SQL injection proof and it will be coded in such a way using encryption. Such that, no malware can hack the web application easily.  
+5.4 Software Quality Attributes 
+There will be an AI, which will help user to get comfortable with the web application. Since we will be using NodeJS and express and we will be following layered architecture and OOP. We are expecting the web application to be smooth. 
+5.5 Business Rules 
+We will follow the standard business rule. Mainly focusing in  
+ Marketing   Sponsorship   Promoting product (mainly sports)  
+ 
+"Hermes Might" 
+ 
