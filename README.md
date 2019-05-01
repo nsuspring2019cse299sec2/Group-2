@@ -8,3 +8,9 @@ Group Space for
 
 1510964042	Kazi Mohammed Sakib	<kazi.mohammad01@northsouth.edu>
 
+
+
+Links:
+Github: https://github.com/nsuspring2019cse299sec2/Group-2
+Slack: https://cse299.slack.com/messages/CGEGPQCBE/
+Trello: https://trello.com/b/7n9TETrt/cse299
