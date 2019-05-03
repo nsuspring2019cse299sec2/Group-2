@@ -12,5 +12,8 @@ Group Space for
 
 Links:
 Github: https://github.com/nsuspring2019cse299sec2/Group-2
+
 Slack: https://cse299.slack.com/messages/CGEGPQCBE/
+
 Trello: https://trello.com/b/7n9TETrt/cse299
+
